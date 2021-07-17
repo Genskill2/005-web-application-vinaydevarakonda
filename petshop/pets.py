@@ -122,4 +122,6 @@ def edit(pid):
           where id = ?;""", (sold, pid))
         conn.commit()
         return redirect(url_for("pets.pet_info", pid=pid), 302)
+        
+    
 
